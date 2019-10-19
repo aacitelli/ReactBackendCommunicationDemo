@@ -6,7 +6,7 @@ var cors = require("cors");
 // Setting Up Express's Server
 var app = express();
 app.use(cors());
-app.use(bodyParser.json());
+app.use(bodyParser.text());
 
 // Handle post request to "/" route 
 app.post("/", (req, res) => 
